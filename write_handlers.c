@@ -129,7 +129,6 @@ int write_num(int ind, char buffer[],
 			if (extra_c)
 				buffer[--padd_start] = extra_c;
 			return (write(1, &buffer[padd_start], i - padd_start) +
-
 					write(1, &buffer[ind], length - (1 - padd_start)));
 		}
 	}
